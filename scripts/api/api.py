@@ -32,10 +32,10 @@ from nv_pipeline.tier2_depth_volume import Tier2DepthVolume
 from nv_pipeline.tier3_weight_estimation import Tier3WeightEstimation
 
 
-# Đường dẫn checkpoint dùng cho API (chỉnh tay tại đây khi muốn test exp khác)
-API_BEST_PATH = os.path.join(
-    CFG.RUNS_DIR, "exp21", "weights", "best.pth"
-)
+# Đường dẫn checkpoint: ưu tiên runs/ (sau train), fallback weights/ (tải từ Releases)
+_API_RUNS = os.path.join(CFG.RUNS_DIR, "exp21", "weights", "best.pth")
+_API_WEIGHTS = os.path.join(PROJECT_ROOT, "weights", "best.pth")
+API_BEST_PATH = _API_RUNS if os.path.isfile(_API_RUNS) else _API_WEIGHTS
 
 # Mapping FoodSemSeg class name → density (g/cm³) cho weight estimation
 FOOD_DENSITIES = {

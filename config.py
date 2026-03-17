@@ -14,9 +14,11 @@ DATA_DIR_RESIZED = os.path.join(PROJECT_ROOT, "data", "FoodSemSeg_512x512")
 DATA_DIR = DATA_DIR_RESIZED if USE_RESIZED_DATA else DATA_DIR_ORIG
 
 CATEGORY_INFO_PATH = os.path.join(DATA_DIR, "category_info.json")
+CATEGORY_INFO_FALLBACK = os.path.join(PROJECT_ROOT, "config", "category_info_22.json")
 
-# Đọc cấu hình từ category_info.json
-with open(CATEGORY_INFO_PATH, "r", encoding="utf-8", errors="replace") as f:
+# Đọc cấu hình từ category_info.json (fallback config/ nếu data/ chưa có)
+_path = CATEGORY_INFO_PATH if os.path.isfile(CATEGORY_INFO_PATH) else CATEGORY_INFO_FALLBACK
+with open(_path, "r", encoding="utf-8", errors="replace") as f:
     category_info = json.load(f)
 
 # Cấu trúc: train/images, train/masks | test/images, test/masks

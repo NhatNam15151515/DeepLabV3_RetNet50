@@ -1,6 +1,3 @@
-# SpecStory
-.specstory/
-
 # IDE & Editor
 .vscode/
 .idea/
@@ -9,6 +6,9 @@
 .cursor/
 .cursorignore
 .cursorindexingignore
+
+# SpecStory
+.specstory/
 
 # Python
 __pycache__/
@@ -21,15 +21,23 @@ __pycache__/
 dist/
 build/
 
-# Project-specific
-reports/
-data/
-checkpoints/
-runs/
+# Project — ignore nội dung, giữ cấu trúc thư mục (.gitkeep)
+data/*
+!data/.gitkeep
+checkpoints/*
+!checkpoints/.gitkeep
+runs/*
+!runs/.gitkeep
+reports/*
+!reports/.gitkeep
+weights/*
+!weights/README.md
 
 # API output
-scripts/api_results/
-scripts/api_results_exp19/
+scripts/api_results/*
+!scripts/api_results/.gitkeep
+scripts/api_results_exp19/*
+!scripts/api_results_exp19/.gitkeep
 
 # Environment
 .env
