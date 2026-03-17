@@ -21,12 +21,11 @@ Phân vùng ngữ nghĩa thực phẩm với DeepLabV3+ (ResNet50) trên dataset
     └── generate_report.py
 ```
 ## Chạy API
-API sẽ tìm checkpoint theo thứ tự:
-`runs/train/exp21/weights/best.pth (nếu có)`
-`weights/best.pth (nếu không có)`
-`Quy trình cho người dùng:`
-`Clone repo`
-`Copy thư mục runs/vào project`.
+**API sẽ tìm checkpoint theo thứ tự:**
+- runs/train/exp21/weights/best.pth (nếu có)
+- weights/best.pth (nếu không có)
+**Quy trình cho người dùng:**
+- Clone repo
 ```bash
 pip install -r requirements.txt
 ```
