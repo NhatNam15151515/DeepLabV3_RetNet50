@@ -22,17 +22,11 @@ Phân vùng ngữ nghĩa thực phẩm với DeepLabV3+ (ResNet50) trên dataset
 ```
 ## Chạy API
 API sẽ tìm checkpoint theo thứ tự:
-runs/train/exp21/weights/best.pth (nếu có)
-weights/best.pth (nếu không có)
-Quy trình cho người dùng:
-```
-```
+`runs/train/exp21/weights/best.pth (nếu có)`
+`weights/best.pth (nếu không có)`
+`Quy trình cho người dùng:`
 Clone repo
-Copy thư mục runs/ của vào project
-pip install -r requirements.txt
-uvicorn scripts.api.api:app --host 0.0.0.0 --port 8000
-Không cần tải từ Releases nếu đã có runs/.
-```
+`Copy thư mục runs/ của vào project`.
 ```bash
 pip install -r requirements.txt
 ```
