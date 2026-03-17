@@ -1,0 +1,30 @@
+{
+  "description": "Calibrated from 38 NutritionVerse-real images (excluded: onion, rice, potato, noodles, pork)",
+  "method": "B - Per-class effective density (median of gt_weight / pipeline_volume)",
+  "metrics_before": {
+    "MAE_g": 8125.0,
+    "MAPE_pct": 3330.3
+  },
+  "metrics_after_B": {
+    "MAE_g": 247.7,
+    "MAPE_pct": 128.1
+  },
+  "global_scale_factor_A": 0.051201,
+  "per_class_effective_density": {
+    "chicken-breast": 0.0646,
+    "chicken-leg": 0.036265,
+    "chicken-wing": 0.039632,
+    "lasagna": 0.058321,
+    "near-whole-chicken": 0.032242,
+    "steak-piece": 0.139396
+  },
+  "real_densities_C": {
+    "chicken-wing": 1.05,
+    "chicken-leg": 1.05,
+    "chicken-breast": 1.04,
+    "near-whole-chicken": 0.95,
+    "lasagna": 1.1,
+    "steak-piece": 1.08
+  },
+  "volume_scale_C": 0.042778
+}

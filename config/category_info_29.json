@@ -1,0 +1,118 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "milk"
+    },
+    {
+      "id": 2,
+      "name": "egg"
+    },
+    {
+      "id": 3,
+      "name": "banana"
+    },
+    {
+      "id": 4,
+      "name": "mango"
+    },
+    {
+      "id": 5,
+      "name": "steak"
+    },
+    {
+      "id": 6,
+      "name": "pork"
+    },
+    {
+      "id": 7,
+      "name": "chicken"
+    },
+    {
+      "id": 8,
+      "name": "fish"
+    },
+    {
+      "id": 9,
+      "name": "shellfish"
+    },
+    {
+      "id": 10,
+      "name": "shrimp"
+    },
+    {
+      "id": 11,
+      "name": "bread"
+    },
+    {
+      "id": 12,
+      "name": "hanamaki baozi"
+    },
+    {
+      "id": 13,
+      "name": "noodles"
+    },
+    {
+      "id": 14,
+      "name": "rice"
+    },
+    {
+      "id": 15,
+      "name": "tofu"
+    },
+    {
+      "id": 16,
+      "name": "potato"
+    },
+    {
+      "id": 17,
+      "name": "garlic"
+    },
+    {
+      "id": 18,
+      "name": "tomato"
+    },
+    {
+      "id": 19,
+      "name": "ginger"
+    },
+    {
+      "id": 20,
+      "name": "lettuce"
+    },
+    {
+      "id": 21,
+      "name": "cucumber"
+    },
+    {
+      "id": 22,
+      "name": "carrot"
+    },
+    {
+      "id": 23,
+      "name": "broccoli"
+    },
+    {
+      "id": 24,
+      "name": "cabbage"
+    },
+    {
+      "id": 25,
+      "name": "bean sprouts"
+    },
+    {
+      "id": 26,
+      "name": "onion"
+    },
+    {
+      "id": 27,
+      "name": "pepper"
+    },
+    {
+      "id": 28,
+      "name": "French beans"
+    }
+  ],
+  "num_classes": 29,
+  "note": "Sequential ID: 0=background, 1..N=foreground"
+}

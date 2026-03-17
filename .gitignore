@@ -1,0 +1,45 @@
+# SpecStory
+.specstory/
+
+# IDE & Editor
+.vscode/
+.idea/
+
+# Cursor
+.cursor/
+.cursorignore
+.cursorindexingignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Project-specific
+reports/
+data/
+checkpoints/
+runs/
+
+# API output
+scripts/api_results/
+scripts/api_results_exp19/
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+# SpecStory explanation file
+.specstory/.what-is-this.md
