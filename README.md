@@ -22,14 +22,25 @@ Phân vùng ngữ nghĩa thực phẩm với DeepLabV3+ (ResNet50) trên dataset
 ```
 
 ## Chạy API
+API sẽ tìm checkpoint theo thứ tự:
 
+runs/train/exp21/weights/best.pth (nếu có)
+weights/best.pth (nếu không có)
+Quy trình cho người dùng:
+
+Clone repo
+Copy thư mục runs/ của vào project
+pip install -r requirements.txt
+uvicorn scripts.api.api:app --host 0.0.0.0 --port 8000
+Không cần tải từ Releases nếu đã có runs/.
 ```bash
 pip install -r requirements.txt
 ```
 
-1. Tải `best.pth` từ [Releases](https://github.com/NhatNam15151515/DeepLabV3_RetNet50/releases) → đặt vào `weights/`
+1. Tải thư mục `runs/` từ [Google Drive](https://drive.google.com/drive/folders/1kIm6Y9wQF1dEbHKUn86htZ2UsWq7GnQD?usp=sharing) → giải nén vào thư mục gốc project (có `runs/train/exp21/weights/best.pth`)
 2. `uvicorn scripts.api.api:app --host 0.0.0.0 --port 8000`
 3. `python scripts/api/test_api.py`
+
 
 ## Training
 
